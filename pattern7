@@ -1,0 +1,33 @@
+/*PRINT THIS PATTERN 
+ 11111
+  2222
+   333
+    44
+     5
+*/
+import java.util.Scanner;
+
+class pattern12
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("enter N");
+        int n;
+        Scanner sc = new Scanner(System.in);
+        n= sc.nextInt();
+        for(int i=1; i<=n; i++)
+        {
+            for(int space=0; space<=i-1; space++ )
+         {
+            System.out.print(" ");
+         }
+            for(int j=n; j>=i; j--)
+            {
+                System.out.print(i);    
+            }
+            System.out.println("");
+        }
+        
+        }
+        
+    }
