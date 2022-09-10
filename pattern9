@@ -1,0 +1,32 @@
+/* PRINT THIS PATTERN
+---*
+--***
+-*****
+*******
+*/
+import java.util.Scanner;
+
+class pattern14
+{
+    public static void main(String[] args) 
+    {
+        System.out.println("enter N");
+        int n;
+        Scanner sc = new Scanner(System.in);
+        n= sc.nextInt();
+        for(int i=1; i<=n; i++)
+        {
+            for(int space=n-1; space>=i; space-- )
+         {
+            System.out.print(" ");
+         }
+            for(int j=2; j<=2*i; j++)
+            {
+                System.out.print("*");    
+            }
+            System.out.println("");
+        }
+        
+        }
+        
+    }
